@@ -1,0 +1,11 @@
+// Console.WriteLine("Hello World");
+Console.WriteLine("Välkommen till Github C#, vänligen skriv ditt namn nedan");
+string namn = Console.ReadLine();
+Console.WriteLine($"Hej {namn}! Hur gammal är du?");
+string ålder = Console.ReadLine();
+double tillåten = Convert.ToDouble(ålder);
+if (tillåten >= 18) Console.WriteLine($"Oj, {namn}, du är ju gammal nog för att ta en öl på krogen med polarna!");
+if (tillåten < 18) Console.WriteLine($"Jaha, så du är {ålder} år gammal, {namn}.");
+Console.WriteLine("Vad gillar du att se på TV hemma?");
+string teve = Console.ReadLine();
+Console.WriteLine($"Jaha, {namn}, då tycker jag att du ska kolla på {teve} i eftermiddag, förutsatt att du inte kollat klart på det såklart ;)");
